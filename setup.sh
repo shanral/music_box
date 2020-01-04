@@ -14,3 +14,6 @@ amixer cset numid=3 1
 
 # create execution script in home drive
 cp play.sh ~
+
+# update crontab to play script on boot
+echo "@reboot ~/play.sh" | crontab -
